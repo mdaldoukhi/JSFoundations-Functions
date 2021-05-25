@@ -54,9 +54,8 @@ function oddsSmallerThan(n) {
 function squareOrDouble(n) {
   if(!isOdd(n)){
     return n*2
-  }else {
-    return n*n
   }
+  return n*n
 }
 
 module.exports = { greet, isOdd, oddsSmallerThan, squareOrDouble };
