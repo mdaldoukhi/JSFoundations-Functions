@@ -38,7 +38,11 @@ function isOdd(n) {
  * oddsSmallerThan(15) -> 7
  */
 function oddsSmallerThan(n) {
-  return Math.floor(n/2)
+  if(n % 2 == 0){
+    return Math.floor(n/2)
+  }else {
+    return Math.floor(n/2)
+  }
 }
 
 /**
