@@ -20,11 +20,7 @@ function greet(name) {
  * isOdd(10) -> false
  */
 function isOdd(n) {
-  if(n % 2 == 0){
-    return false
-  }else {
-    return true
-  }
+  return ((n % 2 == 0) ? false : true)
 }
 
 
@@ -52,10 +48,7 @@ function oddsSmallerThan(n) {
  * squareOrDouble(9) -> 81
  */
 function squareOrDouble(n) {
-  if(!isOdd(n)){
-    return n*2
-  }
-  return n*n
+  return (!isOdd(n) ? n*2 : n*n)
 }
 
 module.exports = { greet, isOdd, oddsSmallerThan, squareOrDouble };
