@@ -38,11 +38,7 @@ function isOdd(n) {
  * oddsSmallerThan(15) -> 7
  */
 function oddsSmallerThan(n) {
-  if(n % 2 == 0){
-    return Math.floor(n/2)
-  }else {
-    return Math.floor(n/2)
-  }
+  return Math.floor(n/2)
 }
 
 /**
@@ -56,7 +52,7 @@ function oddsSmallerThan(n) {
  * squareOrDouble(9) -> 81
  */
 function squareOrDouble(n) {
-  if(n % 2 == 0){
+  if(!isOdd(n)){
     return n*2
   }else {
     return n*n
